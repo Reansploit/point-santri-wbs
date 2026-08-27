@@ -7,7 +7,7 @@ build/
 out/
 
 # Mengabaikan file konfigurasi lokal dan rahasia (seperti API Keys)
-.claude
+.claude/
 .env
 .env.local
 *.env
