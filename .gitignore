@@ -18,3 +18,9 @@ Thumbs.db
 
 # Mengabaikan log error
 *.log
+
+# File data & artifact lokal (bukan source code)
+*.xlsx
+*.sqlite
+backup.sql
+qism-natijah-desktop.zip
