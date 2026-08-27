@@ -1,0 +1,333 @@
+.introPage {
+  width: 100%;
+  min-height: 100vh;
+  background: #000;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.netflixIntro {
+  display: block;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  background-size: 4000px;
+  background-position: -1950px 0;
+  animation: zoom-in 3.5s ease-in 0.5s forwards;
+  transform-origin: 30% center;
+}
+
+.netflixIntro::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 150%;
+  height: 30%;
+  left: -25%;
+  bottom: -27%;
+  border-radius: 50%;
+  z-index: 5;
+  background-color: #000;
+  background-size: 4000px;
+  background-position: -1950px 0;
+}
+
+.netflixIntro :global([class*="helper-"]) {
+  position: absolute;
+}
+
+.netflixIntro :global(.helper-1) {
+  width: 19.5%;
+  height: 100%;
+  background-color: rgba(228, 9, 19, 0.5);
+  left: 22.4%;
+  top: 0;
+  transform: rotate(180deg);
+  animation: fading-lumieres-box 2s 0.6s forwards;
+}
+
+.netflixIntro :global(.helper-1 .effect-brush) {
+  animation: brush-moving 2.5s 1.2s forwards;
+}
+
+.netflixIntro :global(.helper-1 .effect-brush [class*="fur-"]) {
+  bottom: 0;
+  height: 40%;
+}
+
+.netflixIntro :global(.helper-2) {
+  width: 19.5%;
+  height: 100%;
+  left: 57.8%;
+  top: 0;
+  transform: rotate(180deg);
+  overflow: hidden;
+}
+
+.netflixIntro :global(.helper-2 .effect-brush) {
+  animation: brush-moving 2s 0.5s forwards;
+}
+
+.netflixIntro :global(.helper-3) {
+  width: 19%;
+  height: 150%;
+  left: 40.5%;
+  top: -25%;
+  transform: rotate(-19.5deg);
+  overflow: hidden;
+  box-shadow: 0 0 35px -12px rgba(0, 0, 0, 0.4);
+}
+
+.netflixIntro :global(.helper-3 .effect-brush) {
+  animation: brush-moving 2s 0.8s forwards;
+}
+
+.netflixIntro :global(.effect-brush) {
+  position: absolute;
+  width: 100%;
+  height: 300%;
+  top: 0;
+  overflow: hidden;
+}
+
+.netflixIntro :global(.effect-brush::before) {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 70%;
+  background-color: #e40913;
+  box-shadow: 0 0 29px 24px #e40913;
+}
+
+.netflixIntro :global(.effect-brush [class*="fur-"]) {
+  position: absolute;
+  display: block;
+  bottom: 10%;
+  height: 30%;
+}
+
+.netflixIntro :global(.fur-1) { left: 0%; width: 3.8%; background: linear-gradient(to bottom, #e40913 0%, #e40913 15%, rgba(0, 0, 0, 0) 81%, rgba(0, 0, 0, 0) 100%); }
+.netflixIntro :global(.fur-2) { left: 3.8%; width: 2.8%; background: linear-gradient(to bottom, #e40913 0%, #e40913 10%, rgba(0, 0, 0, 0) 62%, rgba(0, 0, 0, 0) 100%); }
+.netflixIntro :global(.fur-3) { left: 6.6%; width: 4.8%; background: linear-gradient(to bottom, #e40913 0%, #e40913 37%, rgba(0, 0, 0, 0) 100%); }
+.netflixIntro :global(.fur-4) { left: 11.4%; width: 4%; background: linear-gradient(to bottom, #e40913 0%, #e40913 23%, rgba(0, 0, 0, 0) 100%); }
+.netflixIntro :global(.fur-5) { left: 15.4%; width: 4%; background: linear-gradient(to bottom, #e40913 0%, #e40913 15%, rgba(0, 0, 0, 0) 86%, rgba(0, 0, 0, 0) 100%); }
+.netflixIntro :global(.fur-6) { left: 19.4%; width: 2.5%; background: linear-gradient(to bottom, #e40913 0%, #e40913 27%, rgba(0, 0, 0, 0) 89%, rgba(0, 0, 0, 0) 100%); }
+.netflixIntro :global(.fur-7) { left: 21.9%; width: 4%; background: linear-gradient(to bottom, #e40913 0%, #e40913 20%, rgba(0, 0, 0, 0) 100%); }
+.netflixIntro :global(.fur-8) { left: 25.9%; width: 2%; background: linear-gradient(to bottom, #e40913 0%, #e40913 30%, rgba(0, 0, 0, 0) 100%); }
+.netflixIntro :global(.fur-9) { left: 27.9%; width: 4%; background: linear-gradient(to bottom, #e40913 0%, #e40913 35%, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0) 100%); }
+.netflixIntro :global(.fur-10) { left: 31.9%; width: 3.5%; background: linear-gradient(to bottom, #e40913 0%, #e40913 39%, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0) 100%); }
+.netflixIntro :global(.fur-11) { left: 35.4%; width: 2%; background: linear-gradient(to bottom, #e40913 0%, #e40913 34%, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0) 100%); }
+.netflixIntro :global(.fur-12) { left: 37.4%; width: 2.6%; background: linear-gradient(to bottom, #e40913 0%, #e40913 22%, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0) 100%); }
+.netflixIntro :global(.fur-13) { left: 40%; width: 6%; background: linear-gradient(to bottom, #e40913 0%, #e40913 47%, rgba(0, 0, 0, 0) 100%); }
+.netflixIntro :global(.fur-14) { left: 46%; width: 2%; background: linear-gradient(to bottom, #e40913 0%, #e40913 36%, rgba(0, 0, 0, 0) 100%); }
+.netflixIntro :global(.fur-15) { left: 48%; width: 5.5%; background: linear-gradient(to bottom, #e40913 0%, #e40913 29%, rgba(0, 0, 0, 0) 100%); }
+.netflixIntro :global(.fur-16) { left: 53.5%; width: 3%; background: linear-gradient(to bottom, #e40913 0%, #e40913 39%, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0) 100%); }
+.netflixIntro :global(.fur-17) { left: 56.5%; width: 4.1%; background: linear-gradient(to bottom, #e40913 0%, #e40913 45%, rgba(0, 0, 0, 0) 100%); }
+.netflixIntro :global(.fur-18) { left: 60.6%; width: 2.4%; background: linear-gradient(to bottom, #e40913 0%, #e40913 34%, rgba(0, 0, 0, 0) 100%); }
+.netflixIntro :global(.fur-19) { left: 63%; width: 4%; background: linear-gradient(to bottom, #e40913 0%, #e40913 47%, rgba(0, 0, 0, 0) 100%); }
+.netflixIntro :global(.fur-20) { left: 67%; width: 1.5%; background: linear-gradient(to bottom, #e40913 0%, #e40913 27%, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0) 100%); }
+.netflixIntro :global(.fur-21) { left: 68.5%; width: 2.8%; background: linear-gradient(to bottom, #e40913 0%, #e40913 37%, rgba(0, 0, 0, 0) 100%); }
+.netflixIntro :global(.fur-22) { left: 71.3%; width: 2.3%; background: linear-gradient(to bottom, #e40913 0%, #e40913 9%, rgba(0, 0, 0, 0) 100%); }
+.netflixIntro :global(.fur-23) { left: 73.6%; width: 2.2%; background: linear-gradient(to bottom, #e40913 0%, #e40913 28%, rgba(0, 0, 0, 0) 92%, rgba(0, 0, 0, 0) 100%); }
+.netflixIntro :global(.fur-24) { left: 75.8%; width: 1%; background: linear-gradient(to bottom, #e40913 0%, #e40913 37%, rgba(0, 0, 0, 0) 100%); }
+.netflixIntro :global(.fur-25) { left: 76.8%; width: 2.1%; background: linear-gradient(to bottom, #e40913 0%, #e40913 28%, rgba(0, 0, 0, 0) 100%); }
+.netflixIntro :global(.fur-26) { left: 78.9%; width: 4.1%; background: linear-gradient(to bottom, #e40913 0%, #e40913 34%, rgba(0, 0, 0, 0) 100%); }
+.netflixIntro :global(.fur-27) { left: 83%; width: 2.5%; background: linear-gradient(to bottom, #e40913 0%, #e40913 21%, rgba(0, 0, 0, 0) 100%); }
+.netflixIntro :global(.fur-28) { left: 85.5%; width: 4.5%; background: linear-gradient(to bottom, #e40913 0%, #e40913 39%, rgba(0, 0, 0, 0) 100%); }
+.netflixIntro :global(.fur-29) { left: 90%; width: 2.8%; background: linear-gradient(to bottom, #e40913 0%, #e40913 30%, rgba(0, 0, 0, 0) 100%); }
+.netflixIntro :global(.fur-30) { left: 92.8%; width: 3.5%; background: linear-gradient(to bottom, #e40913 0%, #e40913 19%, rgba(0, 0, 0, 0) 100%); }
+.netflixIntro :global(.fur-31) { left: 96.3%; width: 3.7%; background: linear-gradient(to bottom, #e40913 0%, #e40913 37%, rgba(0, 0, 0, 0) 100%); }
+
+.netflixIntro :global(.effect-lumieres) {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: showing-lumieres 2s 1.6s forwards;
+}
+
+.netflixIntro :global(.effect-lumieres [class*="lamp-"]) {
+  position: absolute;
+  display: block;
+  height: 100%;
+  box-shadow: 0 0 10px 0 rgba(228, 9, 19, 0.75);
+  background: var(--color);
+}
+
+.netflixIntro :global(.effect-lumieres [class*="lamp-"]::before) {
+  position: absolute;
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--color);
+  box-shadow: 0 0 10px 0 rgba(228, 9, 19, 0.75);
+}
+
+.netflixIntro :global(.lamp-1) { --color: #ff0100; left: 0.7%; width: 1%; animation-delay: 1.47s; }
+.netflixIntro :global(.lamp-1::before) { left: 189%; animation-delay: 1.28s; }
+.netflixIntro :global(.lamp-2) { --color: #ffde01; left: 2.2%; width: 1.4%; animation-delay: 1.49s; }
+.netflixIntro :global(.lamp-2::before) { left: 154%; animation-delay: 0.96s; }
+.netflixIntro :global(.lamp-3) { --color: #ff00cc; left: 5.8%; width: 2.1%; animation-delay: 0.49s; }
+.netflixIntro :global(.lamp-3::before) { left: 96%; animation-delay: 1.59s; }
+.netflixIntro :global(.lamp-4) { --color: #04fd8f; left: 10.1%; width: 2%; animation-delay: 0.38s; }
+.netflixIntro :global(.lamp-4::before) { left: 23%; animation-delay: 0.42s; }
+.netflixIntro :global(.lamp-5) { --color: #ff0100; left: 12.9%; width: 1.4%; animation-delay: 0.45s; }
+.netflixIntro :global(.lamp-5::before) { left: 192%; animation-delay: 0.22s; }
+.netflixIntro :global(.lamp-6) { --color: #ff9600; left: 15.3%; width: 2.8%; animation-delay: 0.59s; }
+.netflixIntro :global(.lamp-6::before) { left: 114%; animation-delay: 1.93s; }
+.netflixIntro :global(.lamp-7) { --color: #0084ff; left: 21.2%; width: 2.5%; animation-delay: 1s; }
+.netflixIntro :global(.lamp-7::before) { left: 163%; animation-delay: 0.89s; }
+.netflixIntro :global(.lamp-8) { --color: #f84006; left: 25%; width: 2.5%; animation-delay: 1.47s; }
+.netflixIntro :global(.lamp-8::before) { left: 113%; animation-delay: 0.3s; }
+.netflixIntro :global(.lamp-9) { --color: #ffc601; left: 30.5%; width: 3%; animation-delay: 1.25s; }
+.netflixIntro :global(.lamp-9::before) { left: 97%; animation-delay: 1.51s; }
+.netflixIntro :global(.lamp-10) { --color: #ff4800; left: 36.3%; width: 3%; animation-delay: 0.74s; }
+.netflixIntro :global(.lamp-10::before) { left: 67%; animation-delay: 1.62s; }
+.netflixIntro :global(.lamp-11) { --color: #fd0100; left: 41%; width: 2.2%; animation-delay: 0.48s; }
+.netflixIntro :global(.lamp-11::before) { left: 10%; animation-delay: 0.74s; }
+.netflixIntro :global(.lamp-12) { --color: #01ffff; left: 44.2%; width: 2.6%; animation-delay: 1.15s; }
+.netflixIntro :global(.lamp-12::before) { left: 188%; animation-delay: 0.6s; }
+.netflixIntro :global(.lamp-13) { --color: #ffc601; left: 51.7%; width: 0.5%; animation-delay: 0.18s; }
+.netflixIntro :global(.lamp-13::before) { left: 56%; animation-delay: 0.25s; }
+.netflixIntro :global(.lamp-14) { --color: #ffc601; left: 52.1%; width: 1.8%; animation-delay: 0.77s; }
+.netflixIntro :global(.lamp-14::before) { left: 31%; animation-delay: 1.61s; }
+.netflixIntro :global(.lamp-15) { --color: #0078fe; left: 53.8%; width: 2.3%; animation-delay: 0.32s; }
+.netflixIntro :global(.lamp-15::before) { left: 194%; animation-delay: 1.97s; }
+.netflixIntro :global(.lamp-16) { --color: #0080ff; left: 57.2%; width: 2%; animation-delay: 0.41s; }
+.netflixIntro :global(.lamp-16::before) { left: 102%; animation-delay: 0.69s; }
+.netflixIntro :global(.lamp-17) { --color: #ffae01; left: 62.3%; width: 2.9%; animation-delay: 0.08s; }
+.netflixIntro :global(.lamp-17::before) { left: 143%; animation-delay: 0.24s; }
+.netflixIntro :global(.lamp-18) { --color: #ff00bf; left: 65.8%; width: 1.7%; animation-delay: 1.96s; }
+.netflixIntro :global(.lamp-18::before) { left: 186%; animation-delay: 0.46s; }
+.netflixIntro :global(.lamp-19) { --color: #a601f4; left: 72.8%; width: 0.8%; animation-delay: 1.11s; }
+.netflixIntro :global(.lamp-19::before) { left: 170%; animation-delay: 0.95s; }
+.netflixIntro :global(.lamp-20) { --color: #f30b34; left: 74.3%; width: 2%; animation-delay: 1.9s; }
+.netflixIntro :global(.lamp-20::before) { left: 46%; animation-delay: 0.4s; }
+.netflixIntro :global(.lamp-21) { --color: #ff00bf; left: 79.8%; width: 2%; animation-delay: 1.55s; }
+.netflixIntro :global(.lamp-21::before) { left: 148%; animation-delay: 1.37s; }
+.netflixIntro :global(.lamp-22) { --color: #04fd8f; left: 78.2%; width: 2%; animation-delay: 1.66s; }
+.netflixIntro :global(.lamp-22::before) { left: 154%; animation-delay: 0.35s; }
+.netflixIntro :global(.lamp-23) { --color: #01ffff; left: 78.5%; width: 2%; animation-delay: 1.95s; }
+.netflixIntro :global(.lamp-23::before) { left: 54%; animation-delay: 0.53s; }
+.netflixIntro :global(.lamp-24) { --color: #a201ff; left: 85.3%; width: 1.1%; animation-delay: 0.71s; }
+.netflixIntro :global(.lamp-24::before) { left: 195%; animation-delay: 1.74s; }
+.netflixIntro :global(.lamp-25) { --color: #ec0014; left: 86.9%; width: 1.1%; animation-delay: 1.6s; }
+.netflixIntro :global(.lamp-25::before) { left: 73%; animation-delay: 1.88s; }
+.netflixIntro :global(.lamp-26) { --color: #0078fe; left: 88.8%; width: 2%; animation-delay: 0.3s; }
+.netflixIntro :global(.lamp-26::before) { left: 91%; animation-delay: 1.15s; }
+.netflixIntro :global(.lamp-27) { --color: #ff0036; left: 92.4%; width: 2.4%; animation-delay: 1.5s; }
+.netflixIntro :global(.lamp-27::before) { left: 5%; animation-delay: 1.45s; }
+.netflixIntro :global(.lamp-28) { --color: #06f98c; left: 96.2%; width: 2.1%; animation-delay: 0.83s; }
+.netflixIntro :global(.lamp-28::before) { left: 140%; animation-delay: 1.08s; }
+
+.netflixIntro :global(.lamp-1),
+.netflixIntro :global(.lamp-3),
+.netflixIntro :global(.lamp-5),
+.netflixIntro :global(.lamp-7),
+.netflixIntro :global(.lamp-9),
+.netflixIntro :global(.lamp-11),
+.netflixIntro :global(.lamp-13),
+.netflixIntro :global(.lamp-15),
+.netflixIntro :global(.lamp-17),
+.netflixIntro :global(.lamp-19),
+.netflixIntro :global(.lamp-21),
+.netflixIntro :global(.lamp-23),
+.netflixIntro :global(.lamp-25),
+.netflixIntro :global(.lamp-27) {
+  animation: lumieres-moving-left 5s forwards;
+}
+
+.netflixIntro :global(.lamp-1::before),
+.netflixIntro :global(.lamp-3::before),
+.netflixIntro :global(.lamp-5::before),
+.netflixIntro :global(.lamp-7::before),
+.netflixIntro :global(.lamp-9::before),
+.netflixIntro :global(.lamp-11::before),
+.netflixIntro :global(.lamp-13::before),
+.netflixIntro :global(.lamp-15::before),
+.netflixIntro :global(.lamp-17::before),
+.netflixIntro :global(.lamp-19::before),
+.netflixIntro :global(.lamp-21::before),
+.netflixIntro :global(.lamp-23::before),
+.netflixIntro :global(.lamp-25::before),
+.netflixIntro :global(.lamp-27::before) {
+  animation: lumieres-moving-left 5.5s;
+}
+
+.netflixIntro :global(.lamp-2),
+.netflixIntro :global(.lamp-4),
+.netflixIntro :global(.lamp-6),
+.netflixIntro :global(.lamp-8),
+.netflixIntro :global(.lamp-10),
+.netflixIntro :global(.lamp-12),
+.netflixIntro :global(.lamp-14),
+.netflixIntro :global(.lamp-16),
+.netflixIntro :global(.lamp-18),
+.netflixIntro :global(.lamp-20),
+.netflixIntro :global(.lamp-22),
+.netflixIntro :global(.lamp-24),
+.netflixIntro :global(.lamp-26),
+.netflixIntro :global(.lamp-28) {
+  animation: lumieres-moving-right 5s forwards;
+}
+
+.netflixIntro :global(.lamp-2::before),
+.netflixIntro :global(.lamp-4::before),
+.netflixIntro :global(.lamp-6::before),
+.netflixIntro :global(.lamp-8::before),
+.netflixIntro :global(.lamp-10::before),
+.netflixIntro :global(.lamp-12::before),
+.netflixIntro :global(.lamp-14::before),
+.netflixIntro :global(.lamp-16::before),
+.netflixIntro :global(.lamp-18::before),
+.netflixIntro :global(.lamp-20::before),
+.netflixIntro :global(.lamp-22::before),
+.netflixIntro :global(.lamp-24::before),
+.netflixIntro :global(.lamp-26::before),
+.netflixIntro :global(.lamp-28::before) {
+  animation: lumieres-moving-right 5.5s;
+}
+
+@keyframes brush-moving {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-100%); }
+}
+
+@keyframes lumieres-moving-right {
+  0% { transform: translate(0); }
+  40% { transform: translate(-10px) scaleX(1); }
+  50% { transform: translate(-60px); }
+  100% { transform: translate(-120px) scaleX(3); }
+}
+
+@keyframes lumieres-moving-left {
+  0% { transform: translate(0); }
+  40% { transform: translate(10px) scaleX(1); }
+  50% { transform: translate(60px); }
+  100% { transform: translate(120px) scaleX(3); }
+}
+
+@keyframes zoom-in {
+  0% { transform: scale(1); }
+  100% { transform: scale(15); }
+}
+
+@keyframes showing-lumieres {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fading-lumieres-box {
+  0% { background-color: rgba(228, 9, 19, 0.5); }
+  100% { background-color: rgba(228, 9, 19, 0); }
+}

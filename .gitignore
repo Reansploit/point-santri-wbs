@@ -1,0 +1,19 @@
+# Mengabaikan folder dependency (Node.js)
+node_modules/
+
+# Mengabaikan folder hasil build / kompilasi
+dist/
+build/
+out/
+
+# Mengabaikan file konfigurasi lokal dan rahasia (seperti API Keys)
+.env
+.env.local
+*.env
+
+# Mengabaikan file sistem operasi
+.DS_Store
+Thumbs.db
+
+# Mengabaikan log error
+*.log

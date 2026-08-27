@@ -1,0 +1,22 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/api/report-bug/route": "/api/report-bug",
+  "/api/proxy/[...path]/route": "/api/proxy/[...path]",
+  "/admin/akun/page": "/admin/akun",
+  "/admin/login/page": "/admin/login",
+  "/admin/siswa/page": "/admin/siswa",
+  "/admin/siswa/kelas/[kelas]/page": "/admin/siswa/kelas/[kelas]",
+  "/admin/page": "/admin",
+  "/intro/page": "/intro",
+  "/login/page": "/login",
+  "/page": "/",
+  "/qism/export/page": "/qism/export",
+  "/qism/kelas/[kelas]/page": "/qism/kelas/[kelas]",
+  "/qism/login/page": "/qism/login",
+  "/qism/point/page": "/qism/point",
+  "/qism/page": "/qism",
+  "/qism/rekap/page": "/qism/rekap",
+  "/qism/siswa/[id]/page": "/qism/siswa/[id]",
+  "/report-bug/page": "/report-bug",
+  "/qism/statistik/page": "/qism/statistik"
+}
